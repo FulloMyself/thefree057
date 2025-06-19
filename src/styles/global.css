@@ -221,14 +221,53 @@ button:hover, .download-btn:hover, .explore-btn:hover {
 
 /* Audio Player */
 .audio-player {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #222;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  background: #222;
+  color: #fff;
+  border-radius: 12px;
+  padding: 24px 20px 20px 20px;
+  max-width: 400px;
+  margin: 30px auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.audio-player h4 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.audio-player button {
+  background: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  margin-right: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.audio-player button:last-child {
+  background: #f44336;
+}
+
+.audio-player button:hover {
+  background: #1769aa;
+}
+
+.audio-player button:last-child:hover {
+  background: #b71c1c;
+}
+
+.audio-player .waveform {
+  margin-bottom: 16px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #111;
+  min-height: 60px;
 }
 audio {
   width: 100%;
