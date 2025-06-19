@@ -249,6 +249,12 @@ button:hover, .download-btn:hover, .explore-btn:hover {
   cursor: pointer;
   transition: background 0.2s;
 }
+.audio-player-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
 
 .audio-player button:last-child {
   background: #f44336;

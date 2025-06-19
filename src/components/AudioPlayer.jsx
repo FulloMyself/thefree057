@@ -41,17 +41,21 @@ function AudioPlayer({ track, onClose, onAddToCart }) {
     }
   };
 
+ // ...existing code...
   return (
     <div className="audio-player">
       <h4>Now Playing: {track.title}</h4>
       <div ref={waveformRef} className="waveform" />
-      <button onClick={togglePlay}>{playing ? "Pause" : "Play"}</button>
-      <button className="add-to-cart" onClick={() => onAddToCart && onAddToCart(track)}>
-        Add To Cart
-      </button>
-      <button onClick={onClose}>Close</button>
+      <div className="audio-player-buttons">
+        <button onClick={togglePlay}>{playing ? "Pause" : "Play"}</button>
+        <button className="add-to-cart" onClick={() => onAddToCart && onAddToCart(track)}>
+          Add To Cart
+        </button>
+        <button onClick={onClose}>Close</button>
+      </div>
     </div>
   );
+// ...existing code...
 }
 
 export default AudioPlayer;
