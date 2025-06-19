@@ -47,6 +47,7 @@ function App() {
         <AudioPlayer
           track={currentTrack}
           onClose={() => setCurrentTrack(null)}
+          onAddToCart={() => addToCart(currentTrack)}
         />
       )}
 
