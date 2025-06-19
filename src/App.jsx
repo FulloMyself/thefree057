@@ -21,27 +21,27 @@ function App() {
     <div className="app-container">
       <Homepage />
 
-      <section className="featured-section">
-    <h2>🎵 Featured Tracks</h2>
-    <div className="music-grid">
-      {musicLibrary.map((track) => (
-        <MusicCard
-          key={track.id}
-          track={track}
-          onPlay={() => setCurrentTrack(track)}
-          onAddToCart={() => addToCart(track)}
-        />
-      ))}
-    </div>
-  </section>
-
       <section id="explore" className="explore-section">
-  <h1>About The Free Recordings</h1>
-  <p>
-    We are a recording movement born in the Free State. Join the wave and explore our sound,
-    talent, and culture.
-  </p>
-</section>
+        <h1>About The Free Recordings</h1>
+        <p>
+          We are a recording movement born in the Free State. Join the wave and
+          explore our sound, talent, and culture.
+        </p>
+
+        <div className="featured-section">
+          <h2>🎵 Featured Tracks</h2>
+          <div className="music-grid">
+            {musicLibrary.map((track) => (
+              <MusicCard
+                key={track.id}
+                track={track}
+                onPlay={() => setCurrentTrack(track)}
+                onAddToCart={() => addToCart(track)}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {currentTrack && (
         <AudioPlayer
