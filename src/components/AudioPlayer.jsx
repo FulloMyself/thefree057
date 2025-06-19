@@ -1,7 +1,7 @@
 // components/AudioPlayer.jsx
 import React, { useEffect, useRef, useState } from "react";
 import WaveSurfer from "wavesurfer.js";
-import "./AudioPlayer.css";
+import "../styles/global.css";
 
 function AudioPlayer({ track, onClose }) {
   const waveformRef = useRef(null);
