@@ -270,12 +270,17 @@ button:hover, .download-btn:hover, .explore-btn:hover {
 
 .add-to-cart {
   background: #43a047;
-  margin-right: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 .add-to-cart:hover {
   background: #2e7031;
 }
-
 .audio-player .waveform {
   margin-bottom: 16px;
   border-radius: 6px;
