@@ -262,6 +262,14 @@ button:hover, .download-btn:hover, .explore-btn:hover {
   background: #b71c1c;
 }
 
+.add-to-cart {
+  background: #43a047;
+  margin-right: 10px;
+}
+.add-to-cart:hover {
+  background: #2e7031;
+}
+
 .audio-player .waveform {
   margin-bottom: 16px;
   border-radius: 6px;
