@@ -1,15 +1,16 @@
 // components/Homepage.jsx
-import React, { useEffect } from "react";
+import React, { useRef } from "react";
 import "../styles/global.css";
 
 function Homepage() {
-  useEffect(() => {
-    const playBtn = document.getElementById("playBtn");
-    const audio = document.getElementById("main-audio");
-    const overlay = document.getElementById("audioOverlay");
-    const exploreBtn = document.querySelector(".explore-btn");
+  const overlayRef = useRef(null);
+  const audioRef = useRef(null);
 
-    playBtn?.addEventListener("click", () => {
+  const handlePlay = () => {
+    const audio = audioRef.current;
+    const overlay = overlayRef.current;
+
+    if (audio) {
       audio.currentTime = 0;
       audio.play()
         .then(() => {
@@ -20,20 +21,15 @@ function Homepage() {
           alert("Autoplay blocked or failed. Try again.");
           console.error(err);
         });
-    });
-
-    exploreBtn?.addEventListener("click", () => {
-      const exploreSection = document.getElementById("explore");
-      exploreSection?.scrollIntoView({ behavior: "smooth" });
-    });
-  }, []);
+    }
+  };
 
   return (
     <>
-      <div id="audioOverlay" className="audio-overlay">
+      <div id="audioOverlay" ref={overlayRef} className="audio-overlay">
         <div className="overlay-content">
           <h2>🎧 Experience The Free 057</h2>
-          <button id="playBtn">Click to Play</button>
+          <button onClick={handlePlay}>Click to Play</button>
         </div>
       </div>
 
@@ -45,13 +41,15 @@ function Homepage() {
             <p className="sliding-text">Where beats meet the streets. Dive into the sound of the 057.</p>
           </div>
 
-          <audio id="main-audio" controls>
+          <audio id="main-audio" ref={audioRef} controls>
             <source src="/music/thefree057 - Go Big Or Go To Hell.mp3" type="audio/mpeg" />
             Your browser does not support the audio element.
           </audio>
 
           <div className="hero-buttons">
-            <a href="/music/thefree057 - Go Big Or Go To Hell.mp3" className="download-btn" download>Download Track</a>
+            <a href="/music/thefree057 - Go Big Or Go To Hell.mp3" className="download-btn" download>
+              Download Track
+            </a>
             <a href="#explore" className="explore-btn">Explore More</a>
           </div>
         </div>
