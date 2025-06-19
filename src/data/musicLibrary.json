@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Von Intellekt: Untitled",
+    "artist": "Von Intellekt",
+    "cover": "/music/hero-section.jpg",
+    "audio": "/music/thefree057 - Von.mp3",
+    "price": 10,
+    "genre": "Jazz Rap",
+    "duration": "3:27"
+  },
+  {
+    "id": "2",
+    "title": "Chabi Mas: Dope Rhyme Heaven",
+    "artist": "Chabi Mas",
+    "cover": "/music/hero-section.jpg",
+    "audio": "/music/thefree057 - Chabi Mas Dope Rhyme Heaven.mp3",
+    "price": 10,
+    "genre": "Hip Hop",
+    "duration": "3:07"
+  },
+  {
+    "id": "3",
+    "title": "Chabi Mas: The Recipe",
+    "artist": "Chabi Mas",
+    "cover": "/music/hero-section.jpg",
+    "audio": "/music/thefree057 - BOOM.mp3",
+    "price": 10,
+    "genre": "Hip Hop/ Rap",
+    "duration": "4:43"
+  },
+  {
+    "id": "4",
+    "title": "Chabi Mas: Go Big Or Go To Hell",
+    "artist": "Chabi Mas",
+    "cover": "/music/hero-section.jpg",
+    "audio": "/music/thefree057 - Go Big Or Go To Hell.mp3",
+    "price": 10,
+    "genre": "Hip Hop",
+    "duration": "3:00"
+  },
+  {
+    "id": "5",
+    "title": "Chabi Mas: Two Moons",
+    "artist": "Chabi Mas",
+    "cover": "/music/hero-section.jpg",
+    "audio": "/music/Two Moons.mp3",
+    "price": 10,
+    "genre": "Hip Hop",
+    "duration": "3:18"
+  },
+  {
+    "id": "6",
+    "title": "Chabi Mas: CEO",
+    "artist": "Chabi Mas",
+    "cover": "/music/hero-section.jpg",
+    "audio": "/music/thefree057 - Chabi Mas X BKRY.mp3",
+    "price": 10,
+    "genre": "Hip Hop",
+    "duration": "3:00"
+  }
+]
